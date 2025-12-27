@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* THEME BLOG (sombre) */
+.theme-blog {
+  --bg: #111827;
+  --text: #f3f4f6;
+  --card: #1f2937;
+  --accent: #3b82f6; /* Bleu clair accessible sur fond sombre */
+}
+/* THEME SHOP (clair) */
+.theme-shop {
+  --bg: #ffffff;
+  --text: #111827;
+  --card: #f3f4f6;
+  --accent: #b91c1c; /* Rouge foncé accessible sur fond clair */
+}
+
+.theme-soft {
+  --bg: #1e293b;
+  --text: #ffffff;
+  --card: #1f2937;
+  --accent: #3b82f6; /* Bleu foncé accessible sur fond clair */
+}
+
+
+body { background-color: var(--bg); color: var(--text); }
+.card { background-color: var(--card); color: var(--text); }
+.link { color: var(--text); }
+.link:hover { color: var(--accent); }
+
+/* Lien Voir plus */
+.btn-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.btn-link:hover {
+  text-decoration: underline;
+}
+.wysiwyg {
+  ol, ul {
+    list-style: disc !important;
+    margin: 10px;
+  }
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+:focus {
+  outline: #0b5ed7 solid 2px;
+  outline-offset: 1px;
+}
+.submenu-container {
+  z-index: 99;
+}
